@@ -1,13 +1,15 @@
 .App {
-  text-align: center;
+  
   font-size: larger;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   background-image: linear-gradient(lightblue, white);
 }
 .maindiv{
-  padding-top: 1em;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-top: 1%;
+  padding-left: 10%;
+  width: 60%;
+  ;
+  
 }
 
 h1 {
@@ -17,8 +19,7 @@ h1 {
 ul {
   display: block;
   list-style-type: none;
-  padding-left: 0em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em;
+
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+//"homepage": "/personnummer",
 export default function Personr() {
 
     //const [page, setPage] = useState(1);
@@ -44,9 +44,9 @@ export default function Personr() {
     
       return (
         <div className="maindiv">
-            <h1>Testpersonnummer från Skatteverket</h1>
+            <h1>Personnummer för test från Skatteverket</h1>
            
-            <p>Här kan du hämta personummer från Skatteverkets databas som kan användas till testning eller för övning i exempel löne program som Visma. Du kan <b>skapa nya</b> personnummer genom att ladda om sidan: (Ctrl)+(r)</p> 
+            <p>Här kan du hämta testpersonummer från Skatteverkets databas som kan användas till testning eller för övning i t.ex löne program som Visma. Du kan <b>skapa nya</b> personnummer genom att ladda om sidan: (Ctrl)+(r)</p> 
             <ul>
                 
                 {personrdata.map( (persnritem, index) => ( <li key={index} > {getGender(persnritem.testpersonnummer)}  {persnritem.testpersonnummer}</li>  )
@@ -55,7 +55,7 @@ export default function Personr() {
 
             </ul>
             <p>Om näst sista siffran i personnummret är jämnt tillhör det en kvinna och är siffran udda en man. </p>
-            <strong>&copy; Jens Lundeqvist</strong>
+            <h5><strong>&copy; Jens Lundeqvist</strong></h5>
 
         </div>
     )
